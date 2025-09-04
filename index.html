@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500&display=swap" rel="stylesheet">
+
+    <!--boxicons-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+
+<!----HOME SECTION----->
+<body>
+    <header class="header">
+        <a href="#" class="logo">XAM TAN</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+            <input type="checkbox" id="darkmode-toggle">
+            <label for="darkmode-toggle">
+                <div class="toggle-btn"></div>
+            </label>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <div class="profile">
+            <img src="profile.jpg" height="430"
+            style="border-radius: 70px 70px 100px 70px;">
+        </div>
+        <div class="home-content">
+            <h1>Hi, I am <span>Xam</span></h1>
+            <h3>Computer Science Student</h3>
+            <h5>from <i>Caraga State University</i></h5>
+
+            <div class="btn">
+                <a href="#contact">Contact me</a>
+            </div>
+        </div>
+    </section>
+
+
+<!-----ABOUT ME SECTION----->
+    <section id="about">
+        <div>
+            <img src="about-img.png" height="400"
+            style="border-radius: 20px 20px 20px 20px;" >
+        </div>
+        <div class="about-content">
+            <h1>ABOUT ME</h1>
+
+            <p>I'm a 21-year-old ambitious developer that has a love for code and an endless 
+                curiosity. I'm eager to dive headfirst into the exciting field of development
+                because I want to develop myself as an individual while learning how to create 
+                creative solutions.</p>
+            <br>
+            <div class="tab-about">
+                <h3 class="tab-link">Skills</h3>
+                <h3 class="tab-link">Education</h3>
+            </div>
+            <div class="tab-content">
+                <ul>
+                    <li>Proficient in <span>Python</span></li>
+                    <li>Proficient in <span>HTML</span></li>
+                    <li>Proficient in <span>CSS</span></li>
+                </ul>
+                <ul>
+                    <li><span>2021-2023</span></li>
+                    <li>ANHS-SHS STEM</li>
+                    <li><span>Currently</span></li>
+                    <li>CSU Computer Science</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<!-------SERVICE SECTION------->
+    <div id="services">
+        <div>
+            <h1 class="sub-title">My Services</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="web.png">
+                    <div class="layer">
+                        <i class='bx bx-code-block' style="font-size: 68px;"></i>
+                        <h2>Web Design</h2>
+                        <p>Crafting captivating websites that merge innovation 
+                        <br>with functionality tha ensures seamless, responsive, and 
+                        <br>visually striking digital experience</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="game.jpg" > 
+                    <div class="layer">
+                        <i class='bx bx-joystick-alt' style="font-size: 72px;"></i>
+                        <h2>Game Development</h2>
+                        <p>Bringing visions to life through immersive game development that 
+                        <br>merges creativity and technical expertise, delivering 
+                        <br>captivating and interactive gaming experiences</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="app.png" >
+                    <div class="layer">
+                        <i class='bx bx-devices' style="font-size: 72px;"></i>
+                        <h2>App Design</h2>
+                        <p>Blending creativity with user-centric design principles that crafts 
+                        <br>intuitive, sleek, and functional mobile experiences that resonate 
+                        <br>with users, ensuring seamless navigation and engaging interactions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-----------CONTACT SECTION--------->
+    <div id="contact">
+        <div>
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class='bx bx-mail-send' ></i>xamandrei.tan@carsu.edu.ph</p>
+                    <p><i class='bx bx-phone'></i>09123456789</p>
+                    <div class="socials-icon">
+                        <a href="https://facebook.com"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="https://twitter.com"><i class='bx bxl-twitter' ></i></a>
+                        <a href="https://instagram.com"><i class='bx bxl-instagram' ></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="8" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-------FOOTER SECTION------->
+    <footer>
+        <div>
+            <p>Made by Xam Andrei S. Tan</p>
+        </div>
+    </footer>
+
+    <script>
+    const toggle = document.getElementById('darkmode-toggle');
+    toggle.addEventListener('change', function() {
+        document.body.classList.toggle('dark-mode', this.checked);
+    });
+    </script>
+</body>
+</html>
